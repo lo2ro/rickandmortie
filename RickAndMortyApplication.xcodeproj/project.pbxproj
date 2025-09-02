@@ -6,26 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FE1BC1FB2E64DA5900F364A1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FE1BC1FA2E64DA5900F364A1 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B1187A4C2E54B86B00318F54 /* RickAndMortyApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B1187A5E2E54B86C00318F54 /* Exceptions for "RickAndMortyApplication" folder in "RickAndMortyApplication" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B1187A4B2E54B86B00318F54 /* RickAndMortyApplication */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B1187A4E2E54B86B00318F54 /* RickAndMortyApplication */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B1187A5E2E54B86C00318F54 /* Exceptions for "RickAndMortyApplication" folder in "RickAndMortyApplication" target */,
-			);
 			path = RickAndMortyApplication;
 			sourceTree = "<group>";
 		};
@@ -36,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1BC1FB2E64DA5900F364A1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +70,7 @@
 			);
 			name = RickAndMortyApplication;
 			packageProductDependencies = (
+				FE1BC1FA2E64DA5900F364A1 /* Kingfisher */,
 			);
 			productName = RickAndMortyApplication;
 			productReference = B1187A4C2E54B86B00318F54 /* RickAndMortyApplication.app */;
@@ -107,6 +100,9 @@
 			);
 			mainGroup = B1187A432E54B86B00318F54;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FE1BC1F92E64DA5900F364A1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B1187A4D2E54B86B00318F54 /* Products */;
 			projectDirPath = "";
@@ -150,9 +146,9 @@
 				INFOPLIST_FILE = RickAndMortyApplication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -178,9 +174,9 @@
 				INFOPLIST_FILE = RickAndMortyApplication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE1BC1F92E64DA5900F364A1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE1BC1FA2E64DA5900F364A1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE1BC1F92E64DA5900F364A1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B1187A442E54B86B00318F54 /* Project object */;
 }
